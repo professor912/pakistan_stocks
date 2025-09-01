@@ -13,7 +13,7 @@ class DataBase:
                 password='AVNS_F8_KmQ_c_2TpP-mfHjt',
                 database='defaultdb',
                 port=24753,
-                ssl={'ca': r'D:\Campus X\SQL\stocks-sql-app\ca.pem'}
+                ssl={'ca': r'stocks-sql-app/ca.pem'}
             )
 
             
@@ -197,4 +197,5 @@ class DataBase:
         df.set_index('date',inplace=True)
         return df
 d = DataBase()
+
 # print(d.fetch_openprice_yearly('OGDC'))symbol1,symbol2,symbol3,symbol4
